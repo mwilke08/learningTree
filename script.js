@@ -77,7 +77,7 @@ const slider = function () {
   const goToSlide = function (slide) {
     testimonialText.innerText = testimonials[slide].testimonial;
     testimonialAuthor.innerText = testimonials[slide].name;
-    testimonialImg.src = `../img/${testimonials[slide].img}`;
+    testimonialImg.src = `img/${testimonials[slide].img}`;
     animateCSS('.testimonial__photo', 'fadeIn');
     animateCSS('.testimonial-text', 'fadeIn');
   }

@@ -149,6 +149,7 @@ section h1 {
   perspective: 1000px;
   margin-left: 20px;
   justify-self: center;
+  border-radius: 50%;
 }
 
 .flip-card img {
@@ -177,6 +178,7 @@ section h1 {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  border-radius: 50%;
 }
 
 .flip-card-front {
