@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Round Rock - Learning Tree Day School</title>
+    <link rel="icon" type="image/png" href="../favicon_io/favicon-16x16.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Body Wrapper -->
+    <div class="page-wrapper">
+      <!-- Top of Page Scroller -->
+      <div id="top"></div>
+      <!-- Navigation Wrapper -->
+      <div class="nav-wrapper">
+        <div class="nav-header" id="nav-header">
+          <a href="#top">
+            <img
+              src="../img/logo.png"
+              alt=""
+              class="nav-header-img"
+              id="nav-header-img"
+            />
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <!-- <li><a href="#home">HOME</a></li> -->
+            <li><a href="#">CLASSROOM INFO</a></li>
+            <li><a href="#">PARENT INFO</a></li>
+            <li><a href="#">TEACHERS</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Info Section -->
+      <section class="info-section" id="info">
+        <h1>Learning Tree Day School</h1>
+        <span class="enroll-info" id="enroll-info">
+          <form class="contact-form">
+            <fieldset>
+              <legend>Parent Info</legend>
+              <input type="text" name="fullName" placeholder="Your Name *" />
+              <input type="email" name="email" placeholder="Your Email *" />
+              <label for="numOfChildren">Number of Children:</label>
+              <select id="children" name="children">
+                <optgroup label="Children">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="more">More</option>
+                </optgroup>
+              </select>
+            </fieldset>
+            <fieldset>
+              <legend>Additional Info</legend>
+              <textarea name="field3" placeholder="About Your Child"></textarea>
+            </fieldset>
+            <input type="submit" value="Contact" />
+          </form>
+        </span>
+        <span class="school-info" id="school-info">
+          <h3 class="address-contact">
+            555 North Valley Ln<br />
+            Round Rock, TX 78664
+          </h3>
+          <p class="phone-contact">Phone: 512-555-5555</p>
+          <p class="email-contact">Email: test@test.com</p>
+        </span>
+        <img
+          src="../img/banner.jpg"
+          loading="lazy"
+          class="learning-tree-img animate__bounceIn"
+          alt=""
+        />
+        <div class="onMapLocation">
+          <h3>Map Location</h3>
+          <img src="../img/ltOnMap.png" class="map" alt="" />
+        </div>
+      </section>
+
+      <hr />
+      <!-- Testimonial Section -->
+      <section class="section--3" id="section--3">
+        <h2 class="section-title">What Do Parents Say?</h2>
+
+        <div class="testimonial-description">
+          <blockquote class="testimonial-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Accusantium quas quisquam non? Quas voluptate nulla minima deleniti
+            optio ullam nesciunt, numquam corporis et asperiores laboriosam
+            sunt, praesentium suscipit blanditiis. Necessitatibus id alias
+            reiciendis, perferendis facere pariatur dolore veniam autem esse non
+            voluptatem saepe provident nihil molestiae.
+          </blockquote>
+        </div>
+        <div class="testimonial-author">
+          <address class="testimonial__author">
+            <img src="../img/person1.jpg" alt="" class="testimonial__photo" />
+            <h6 class="testimonial__name">Aarav</h6>
+          </address>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+      </section>
+
+      <hr />
+      <!-- Contact Section -->
+      <section class="about-section" id="about">
+        <h1 class="header-h1">About Us</h1>
+        <h3>
+          Mission: Lorem ipsum aliquid nobis ratione tempore modi id reiciendis.
+        </h3>
+
+        <div class="flip-card flip-card--1">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="../img/covid.jpg"
+                alt="Covid 19"
+                style="width: 300px; height: 300px"
+              />
+            </div>
+            <div class="flip-card-back">
+              <h1>Cautious</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card flip-card--2">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="../img/learningTree1.jpg"
+                alt="Covid 19"
+                style="width: 300px; height: 300px"
+              />
+            </div>
+            <div class="flip-card-back">
+              <h1>Learning</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card flip-card--3">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="../img/learningTree2.jpg"
+                alt="Covid 19"
+                style="width: 300px; height: 300px"
+              />
+            </div>
+            <div class="flip-card-back">
+              <h1>Class</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <hr />
+      <div class="footer">
+        <div class="contact-info">
+          <ul>
+            <li>Phone Number: 512-555-5555</li>
+            <li>Email: test@email.com</li>
+            <li>Address: 555 North Valley Ln</li>
+          </ul>
+          <ul>
+            <li><a href="">Careers</a></li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/LearningTreeDaySchool/"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </li>
+            <li><i class="fab fa-instagram"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
