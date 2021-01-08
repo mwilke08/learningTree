@@ -19,6 +19,10 @@ function removeStickyNav() {
 function callStickyNav() {
   // Get the offset position of the navbar
   const sticky = header.offsetTop;
+  if (window.screen.width < 480) {
+    header.style.display = "none";
+    return;
+  }
   window.pageYOffset > sticky ? applyStickyNav() : removeStickyNav();
 }
 const animateCSS = (element, animation, prefix = 'animate__') =>
@@ -55,12 +59,12 @@ const slider = function () {
     {
       name: 'Sue',
       img: 'person2.jpg',
-      testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu. Vitae et leo duis ut diam. Convallis posuere morbi leo urna. Massa id neque aliquam vestibulum morbi blandit. Quisque id diam vel quam elementum pulvinar etiam. Leo duis ut diam quam nulla porttitor massa. Arcu non odio euismod lacinia at quis.'
+      testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu. Vitae et leo duis ut diam.'
     },
     {
       name: 'Bobby',
       img: 'person3.jpg',
-      testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit dignissim sodales ut eu sem. Sit amet venenatis urna cursus eget. Leo a diam sollicitudin tempor id eu. Bibendum est ultricies integer quis auctor elit sed vulputate.'
+      testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit dignissim sodales ut eu sem. Sit amet venenatis urna cursus eget.'
     },
   ]
 

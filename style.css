@@ -75,7 +75,7 @@ li a:hover {
 
 .nav-header img {
   height: 80%;
-  width: 80%;
+  max-width: 80%;
 }
 
 .nav-wrapper {
@@ -92,7 +92,7 @@ li a:hover {
 }
 
 .header img {
-  width: 50vw;
+  max-width: 50vw;
   height: 40vh;
 }
 
@@ -104,7 +104,6 @@ section {
   margin: 0px auto;
   display: flex;
   justify-content: center;
-  border-radius: 20%;
 }
 
 section h1 {
@@ -123,6 +122,10 @@ section h1 {
     "header header header"
     "mission mission mission"
     "flipCard flipCard flipCard";
+}
+
+.about-mobile {
+  display: none;
 }
 
 .header-h1 {
@@ -144,11 +147,10 @@ section h1 {
 
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  max-width: 300px;
+  max-height: 300px;
   perspective: 1000px;
   margin-left: 20px;
-  justify-self: center;
   border-radius: 50%;
 }
 
@@ -216,12 +218,6 @@ section h1 {
   grid-area: header;
   text-shadow: 2px 2px 3px;
   letter-spacing: 5px;
-}
-
-.onMapLocation {
-  text-align: center;
-  grid-area: info;
-  place-self: center;
 }
 
 .school-info {
@@ -343,7 +339,7 @@ section h1 {
 /* Form Styling */
 .contact-form {
   max-width: 400px;
-  height: 400px;
+  max-height: 400px;
   padding: 10px 20px;
   background: #f4f7f8;
   margin: 10px auto;
@@ -448,4 +444,122 @@ hr {
   height: 5px;
   box-shadow: var(--box-shadow);
   opacity: 30%;
+}
+
+/* For mobile : like samsung grand(480 * 800): */
+@media screen and (max-width: 480px) {
+  .nav-wrapper {
+    visibility: hidden;
+    height: 0px;
+  }
+  .info-section {
+    height: 160vh;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "header"
+      "header"
+      "info"
+      "img"
+      "enroll"
+      "enroll";
+  }
+  .info-section h1 {
+    font-size: 1.5em;
+  }
+
+  .section--3 {
+    height: 100vh;
+    max-width: 100vw;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 150px 150px 70px auto;
+    grid-template-areas:
+      "header header"
+      "sliderImg ."
+      "slideLeft slideRight"
+      "sliderDescription sliderDescription";
+    overflow: hidden;
+  }
+  .slider__btn {
+    width: 50px;
+    height: 30px;
+  }
+
+  .section--3 h2 {
+    font-size: 1.5em;
+  }
+
+  .testimonial-description {
+    font-size: 0.85em;
+    margin-top: 0px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .about-section {
+    display: none;
+  }
+
+  .about-mobile {
+    display: grid;
+    height: 200vh;
+    grid-template-columns: 300px;
+    grid-template-rows: 150px repeat(100px, 7);
+    grid-template-areas:
+      "header"
+      "mission"
+      "topic1Img"
+      "topic1"
+      "topic2Img"
+      "topic2"
+      "topic3Img"
+      "topic3";
+  }
+
+  .about-mobile h1 {
+    grid-area: header;
+    font-size: 1.5em;
+  }
+
+  .about-mobile p {
+    font-size: 0.55em;
+  }
+
+  .about-mobile img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+  }
+
+  .about-mobile h3 {
+    grid-area: mission;
+    font-size: 1.25em;
+  }
+
+  .about-topic--1 {
+    grid-area: topic1;
+  }
+  .about-topic--1 img {
+    grid-area: topic1Img;
+  }
+  .about-topic--2 {
+    grid-area: topic2;
+  }
+  .about-topic--2 img {
+    grid-area: topic2Img;
+  }
+  .about-topic--3 {
+    grid-area: topic3;
+  }
+  .about-topic--3 img {
+    grid-area: topic3Img;
+  }
+
+  hr {
+    visibility: hidden;
+  }
+}
+
+/* For ipad: */
+@media screen and (max-width: 768px) {
 }
